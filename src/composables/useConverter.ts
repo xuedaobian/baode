@@ -1,7 +1,9 @@
 import { ref } from 'vue'
 
-// 动态获取 API 地址，支持局域网访问
-const API_URL = `http://${window.location.hostname}:3001`
+// 开发环境使用本地 3001 端口，生产环境使用环境变量或相对路径
+const API_URL = import.meta.env.DEV
+  ? `http://${window.location.hostname}:3001`
+  : (import.meta.env.VITE_API_URL || '')
 
 export function useConverter() {
   const isLoading = ref(false)
