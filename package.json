@@ -1,0 +1,46 @@
+{
+  "name": "shadcn-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "server": "node server/start-api.js"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@vueuse/core": "^14.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "highlight.js": "^11.11.1",
+    "lucide-vue-next": "^0.546.0",
+    "marked": "^16.4.1",
+    "mermaid": "^11.12.0",
+    "openai": "^6.9.1",
+    "reka-ui": "^2.5.1",
+    "shiki": "^3.13.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.14",
+    "tw-animate-css": "^1.4.0",
+    "vue": "^3.5.22",
+    "vue-markdown-renderer": "^0.2.7",
+    "vue-renderer-markdown": "0.0.57-beta.1",
+    "vue-use-monaco": "^0.0.33"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7",
+    "vite-plugin-monaco-editor-esm": "^2.0.2",
+    "vue-tsc": "^3.1.0"
+  },
+  "packageManager": "pnpm@10.18.3+sha512.bbd16e6d7286fd7e01f6b3c0b3c932cda2965c06a908328f74663f10a9aea51f1129eea615134bf992831b009eabe167ecb7008b597f40ff9bc75946aadfb08d"
+}
